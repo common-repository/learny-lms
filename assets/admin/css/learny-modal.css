@@ -1,0 +1,262 @@
+/*!
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
+ */
+/*!
+ * Bootstrap v3.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.learny-fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+.learny-fade.learny-in {
+    opacity: 1;
+}
+
+.learny-custom-modal-close {
+    float: right;
+    font-size: 21px;
+    font-weight: 200;
+    font-family: auto !important;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+}
+
+.learny-custom-modal-close:hover,
+.learny-custom-modal-close:focus {
+    color: #3699ff;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 1px solid #3699ff;
+    background-color: rgb(204 235 249 / 80%);
+    font-family: auto !important;
+}
+
+button.learny-custom-modal-close {
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+
+    margin-top: -2px;
+    border: 1px solid #212529;
+    padding: 2px 11px 4px;
+    background-color: #ffffff;
+    color: #212529;
+    border-radius: 3px;
+}
+
+.learny-custom-modal-open {
+    overflow: hidden;
+}
+
+.learny-custom-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.learny-custom-modal.learny-fade .learny-custom-modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.learny-custom-modal.learny-in .learny-custom-modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.learny-custom-modal-open .learny-custom-modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.learny-custom-modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.learny-custom-modal-content {
+    position: relative;
+    background-color: #ffffff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    outline: 0;
+}
+
+.learny-custom-modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.learny-custom-modal-backdrop.learny-fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.learny-custom-modal-backdrop.learny-in {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.learny-custom-modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.learny-custom-modal-header .learny-custom-modal-close {
+    margin-top: -2px;
+}
+
+h2.learny-custom-modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    font-weight: 400;
+    color: #181c32 !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+}
+
+.learny-custom-modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.learny-custom-modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.learny-custom-modal-footer .learny-btn+.learny-btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.learny-custom-modal-footer .learny-btn-group .learny-btn+.learny-btn {
+    margin-left: -1px;
+}
+
+.learny-custom-modal-footer .learny-btn-block+.learny-btn-block {
+    margin-left: 0;
+}
+
+.learny-custom-modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) {
+    .learny-custom-modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    .learny-custom-modal-content {
+        -webkit-box-shadow: 0 2px 58px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 58px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .learny-custom-modal-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .learny-custom-modal-lg {
+        width: 900px;
+    }
+}
+
+.learny-custom-modal-clearfix:before,
+.learny-custom-modal-clearfix:after,
+.learny-custom-modal-header:before,
+.learny-custom-modal-header:after,
+.learny-custom-modal-footer:before,
+.learny-custom-modal-footer:after {
+    display: table;
+    content: " ";
+}
+
+.learny-custom-modal-clearfix:after,
+.learny-custom-modal-header:after,
+.learny-custom-modal-footer:after {
+    clear: both;
+}
+
+.learny-custom-modal-action-footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px solid #e2e6ec;
+    height: 108px;
+}
+
+.learny-custom-modal-action-footer .learny-custom-modal-actions {
+    float: right;
+    margin: 20px 20px;
+}
+
+/* CONFIRMATION MODAL CUSTOM CSS */
+.learny-confirmation-modal-label {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.learny-confirmation-modal .learny-custom-modal-dialog {
+    margin-top: 100px;
+}
+
+.learny-confirmation-modal .learny-custom-modal-dialog .learny-custom-modal-content.container.learny-text-center {
+    border-radius: 6px;
+}
+
+.learny-confirmation-modal .learny-custom-modal-dialog .learny-custom-modal-content.container.learny-text-center .learny-custom-modal-header {
+    border-radius: 6px;
+}

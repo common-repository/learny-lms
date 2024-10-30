@@ -1,0 +1,100 @@
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+*******************************/
+.learny-custom-modal.learny-custom-modal-right .learny-custom-modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    padding-top: 28px;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.learny-custom-modal.learny-custom-modal-right .learny-custom-modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.learny-custom-modal.learny-custom-modal-right .learny-custom-modal-body {
+    margin-bottom: 120px;
+}
+
+.learny-custom-modal-body-placeholder {
+    background: url(../images/loader.gif) no-repeat center center;
+    background-size: 200px 200px;
+    height: 83%;
+    background-color: #fff;
+    z-index: 9999999999;
+}
+
+/*Right*/
+.learny-custom-modal.learny-custom-modal-right.learny-fade .learny-custom-modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.learny-custom-modal.learny-custom-modal-right.learny-fade.learny-in .learny-custom-modal-dialog {
+    right: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ----- MODAL STYLE ----- */
+.learny-custom-modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.learny-custom-modal-header {
+    border-bottom-color: #eeeeee;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    padding: 30px 20px 20px;
+}
+
+.learny-custom-modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+}
+
+@media (max-width: 961px) {
+    .learny-custom-modal.learny-custom-modal-right .learny-custom-modal-dialog {
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+        -o-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+
+    .learny-custom-modal-backdrop {
+        display: none;
+    }
+
+    .learny-custom-modal {
+        z-index: 99999;
+    }
+
+    .learny-custom-modal-action-footer {
+        height: 78px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 960px) {
+    .learny-custom-modal.learny-custom-modal-right .learny-custom-modal-dialog {
+        width: 60%;
+    }
+}

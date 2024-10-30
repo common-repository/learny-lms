@@ -1,0 +1,170 @@
+.learny-course-card {
+    background: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    height: 370px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+    color: #020039;
+    margin-bottom: 26px;
+}
+
+.learny-course-card-img {
+    width: 100%;
+    height: 225px;
+    justify-content: center;
+    align-items: center;
+}
+
+.learny-course-card-img .learny-main {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: 0.25s ease-in-out;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.learny-course-card-content {
+    padding: 16px 16px 0px 16px;
+}
+
+.learny-course-card-content a {
+    text-decoration: none;
+}
+
+.learny-course-card-content h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.74);
+    height: 45px;
+    margin: unset !important;
+    margin-bottom: 5px;
+}
+
+.learny-course-card-content h6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #1c0fd7;
+    margin: unset !important;
+}
+
+
+.learny-course-card:hover {
+    box-shadow: 0px 10px 15px rgb(97, 97, 97, 0.3);
+}
+
+.learny-course-instructor {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.learny-course-instructor img {
+    height: 25px;
+    border-radius: 50%;
+}
+
+.learny-course-instructor span {
+    color: #445A7A;
+    font-size: 13px;
+    padding: 0px 10px;
+}
+
+.learny-course-card-footer {
+    border-top: 1px solid rgb(238, 238, 238, 0.5);
+    height: 40px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.learny-course-card-footer .learny-course-rating {
+    padding-left: 16px;
+    font-size: 13px;
+}
+
+.learny-not-rated {
+    color: rgb(189, 189, 189);
+}
+
+.learny-rated {
+    color: rgb(255, 193, 7);
+}
+
+.learny-coures-price {
+    margin-right: 16px;
+    margin-left: auto;
+    background-color: #B9F6CA;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.learny-coures-price h6 {
+    font-size: 13px;
+    margin: unset !important;
+}
+
+
+
+
+
+
+.accordion-item {
+    background-color: #fff;
+    border: none;
+
+}
+
+.accordion-button {
+    background-color: #f2F2F2;
+    box-shadow: none;
+    border: none;
+    padding: 20px 50px;
+    margin: 4px 0;
+}
+
+.accordion-button:not(.collapsed) {
+    border-bottom: 4px solid var(--bs-primary);
+    color: var(--bs-primary);
+    font-weight: bold;
+    background-color: #f2F2F2;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+
+    transform: rotate(-180deg);
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+
+}
+
+.accordion-body ul {
+    list-style: none;
+}

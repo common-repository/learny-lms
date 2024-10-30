@@ -1,0 +1,171 @@
+/* TOOLTIP STARTS HERE */
+/* START TOOLTIP STYLES */
+[learny-tooltip] {
+  position: relative;
+  /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[learny-tooltip]::before,
+[learny-tooltip]::after {
+  text-transform: none;
+  /* opinion 2 */
+  font-size: 0.9em;
+  /* opinion 3 */
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+[learny-tooltip]::before {
+  content: "";
+  border: 5px solid transparent;
+  /* opinion 4 */
+  z-index: 1001;
+  /* absurdity 1 */
+}
+
+[learny-tooltip]::after {
+  content: attr(learny-tooltip);
+  /* magic! */
+
+  /* most of the rest of this is opinion */
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+
+  /*
+        Let the content set the size of the tooltips
+        but this will also keep them from being obnoxious
+        */
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: 0.3ch;
+  box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+  background: #333;
+  color: #fff;
+  z-index: 1000;
+
+  font-size: 13px;
+  /* absurdity 2 */
+}
+
+/* Make the tooltips respond to hover */
+[learny-tooltip]:hover::before,
+[learny-tooltip]:hover::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+[learny-tooltip=""]::before,
+[learny-tooltip=""]::after {
+  display: none !important;
+}
+
+/* FLOW: UP */
+[learny-tooltip]:not([flow])::before,
+[learny-tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+
+[learny-tooltip]:not([flow])::after,
+[learny-tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+
+[learny-tooltip]:not([flow])::before,
+[learny-tooltip]:not([flow])::after,
+[learny-tooltip][flow^="up"]::before,
+[learny-tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -0.5em);
+}
+
+/* FLOW: DOWN */
+[learny-tooltip][flow^="down"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #333;
+}
+
+[learny-tooltip][flow^="down"]::after {
+  top: calc(100% + 5px);
+}
+
+[learny-tooltip][flow^="down"]::before,
+[learny-tooltip][flow^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, 0.5em);
+}
+
+/* FLOW: LEFT */
+[learny-tooltip][flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #333;
+  left: calc(0em - 5px);
+  transform: translate(-0.5em, -50%);
+}
+
+[learny-tooltip][flow^="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translate(-0.5em, -50%);
+}
+
+/* FLOW: RIGHT */
+[learny-tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333;
+  right: calc(0em - 5px);
+  transform: translate(0.5em, -50%);
+}
+
+[learny-tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(0.5em, -50%);
+}
+
+/* KEYFRAMES */
+@keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: 0.9;
+    transform: translate(0, -50%);
+  }
+}
+
+/* FX All The Things */
+[learny-tooltip]:not([flow]):hover::before,
+[learny-tooltip]:not([flow]):hover::after,
+[learny-tooltip][flow^="up"]:hover::before,
+[learny-tooltip][flow^="up"]:hover::after,
+[learny-tooltip][flow^="down"]:hover::before,
+[learny-tooltip][flow^="down"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+[learny-tooltip][flow^="left"]:hover::before,
+[learny-tooltip][flow^="left"]:hover::after,
+[learny-tooltip][flow^="right"]:hover::before,
+[learny-tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
+
+/* TOOLTIP ENDS HERE */

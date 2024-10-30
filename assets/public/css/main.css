@@ -1,0 +1,514 @@
+.learny-wrapper {
+    padding: 10px;
+}
+
+/* MISC */
+.learny-d-none {
+    display: none !important;
+}
+
+.learny-page-header {
+    text-align: center;
+}
+
+.learny-text-black {
+    color: #020039;
+}
+
+.learny-text-muted {
+    color: #445A7A;
+}
+
+/* CONTENT PRELOADER */
+.learny-preloader {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100% !important;
+    height: -webkit-fill-available;
+    z-index: 2000 !important;
+    -webkit-backface-visibility: hidden !important;
+    -moz-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+    -webkit-transform: translateX(-50%) translateY(-50%) !important;
+    -moz-transform: translateX(-50%) translateY(-50%) !important;
+    -ms-transform: translateX(-50%) translateY(-50%) !important;
+    transform: translateX(-50%) translateY(-50%) !important;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    text-align: center;
+    margin: 0 !important;
+    background: url(../images/loader.gif) no-repeat center center;
+    background-color: #fff;
+    background-size: 200px 200px;
+}
+
+/* LEARNY FILTER PAGE */
+.learny-available-sortings {
+    min-height: 40px;
+}
+
+.learny-custom-search-from-group {
+    position: relative;
+    width: 100%;
+}
+
+.learny-search-input {
+    width: 100%;
+    outline: none;
+    height: auto;
+}
+
+.learny-custom-search-botton {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border: 0;
+    outline: none;
+    margin: 0;
+    z-index: 2;
+}
+
+.learny-course-card-img a {
+    height: inherit;
+}
+
+/* COURSE DETAILS PAGE */
+.learny-course-summary {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
+}
+
+.learny-course-summary .learny-course-preview-section img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.learny-course-summary ul {
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+.learny-course-summary li {
+    padding: 10px 0px;
+    margin: 0px !important;
+    border-bottom: 1px solid #dedede54;
+    color: #222;
+}
+
+.learny-course-summary li i {
+    font-size: 22px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #757575;
+}
+
+.learny-course-summary .learny-course-price {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.learny-course-summary .learny-course-btns button {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.learny-course-summary .learny-course-btns button:first-child {
+    margin-bottom: 10px;
+}
+
+.learny-course-description .learny-course-description-section-title {
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #e1e1e1a8;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.learny-course-description .learny-course-description-section-details {
+    font-size: 16px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.learny-course-description .learny-course-description-section-details ul {
+    padding: 0px !important;
+}
+
+.learny-course-details-curriculum-section {
+    display: block;
+    border-bottom: 1px solid #e1e1e157;
+    padding: 10px 0px;
+}
+
+.learny-course-details-curriculum-section ul {
+    margin: 0px 10px !important;
+}
+
+.learny-course-details-curriculum-section .learny-course-details-lesson-title i {
+    font-size: 22px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #757575;
+}
+
+.learny-course-details-curriculum-section .learny-course-details-lesson-duration {
+    float: right;
+}
+
+.learny-course-preview-section {
+    position: relative;
+}
+
+.learny-course-preview-section .learny-play-overlay {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    margin-left: -55px;
+    /*half of the width */
+    margin-top: -55px;
+    /*half of the height */
+    transition: all .2s ease-in-out;
+}
+
+.learny-course-preview-section:hover .learny-play-overlay {
+    transform: scale(1.2);
+}
+
+.learny-course-description-instructor-section img {
+    height: 25px;
+    border-radius: 50%;
+    margin: 0px 6px;
+    vertical-align: sub;
+    display: inline;
+}
+
+
+/* COURSE PREVIEW MODAL */
+
+.learny-course-preview-modal .plyr__video-wrapper {
+    height: 450px !important;
+}
+
+.learny-course-preview-modal .plyr__video-wrapper video {
+    height: 450px !important;
+    width: 100% !important;
+}
+
+.learny-course-preview-modal .modal-title {
+    margin: 0px;
+    color: #222;
+    font-weight: 400;
+}
+
+.learny-course-preview-modal .modal-dialog {
+    max-width: 840px;
+    margin: 1.5rem auto;
+}
+
+/* CHECKOUT PAYMENT GATEWAYS */
+.learny-payment-gateway-image {
+    opacity: 1;
+    height: 60px;
+    background-position: center center;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.learny-payment-gateway-image:hover {
+    opacity: 1;
+}
+
+.learny-payment-gateway-radio {
+    width: 100%;
+}
+
+.learny-payment-gateway-radio>input {
+    display: none;
+    /* position: absolute;
+    margin-top: 36px;
+    margin-left: 20px; */
+}
+
+.learny-payment-gateway-radio>.learny-payment-gateway-image {
+    cursor: pointer;
+    border: 2px solid #9E9E9E;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.learny-payment-gateway-radio>input:checked+.learny-payment-gateway-image {
+    border: 2px solid #FF7043;
+}
+
+/* SHORTCODES STYLES */
+.learny-shortcode-full-width {
+    max-width: 100% !important;
+}
+
+/* STUDENT PAGES CSS */
+.learny-student-sidenav {
+    min-width: 250px !important;
+}
+
+.learny-student-sidenav ul {
+    margin: 5px 0px 0px 0px !important;
+}
+
+.learny-student-sidenav ul li {
+    padding: 5px 15px !important;
+    margin: 0px !important;
+}
+
+.learny-student-sidenav ul li a i {
+    vertical-align: middle !important;
+    margin-right: 10px !important;
+    font-size: 25px !important;
+}
+
+.learny-student-sidenav ul li a {
+    color: #222 !important;
+    text-decoration: none !important;
+}
+
+.learny-student-sidenav ul li.active {
+    background-color: #EEEEEE !important;
+}
+
+.learny-student-page-header {
+    padding: 15px 0px 15px 0px !important;
+    text-align: left !important;
+    border-bottom: 1px solid #dedede87 !important;
+    margin-bottom: 17px !important;
+}
+
+.learny-student-page-header h3 {
+    margin: 0px 0px 0px 10px !important;
+}
+
+.learny-student-page-header i {
+    font-size: 35px !important;
+    vertical-align: text-bottom !important;
+}
+
+.learny-student-sidebar-header span {
+    font-size: 25px !important;
+    margin: 9px 0px !important;
+}
+
+/* STUDENT INTERNAL PAGE COURSE LIST AS TABLE */
+.learny-internal-course-row {
+    padding: 15px 0px;
+    border-bottom: 1px solid #dedede87;
+}
+
+.learny-internal-course-row .learny-internal-course-thumbnail img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.learny-internal-course-row .learny-internal-course-details {
+    font-size: 14px;
+}
+
+.learny-internal-course-row .learny-internal-course-title {
+    font-size: 20px;
+    text-decoration: none !important;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-area {
+    font-size: 17px;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-area label {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #222 !important;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .new-rating-label {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #222 !important;
+    float: left !important;
+    margin-top: 4px !important;
+    margin-right: 4px !important;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate {
+    float: left;
+    height: 46px;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 17px;
+    color: #ccc;
+    padding: 0px !important;
+    margin-right: 5px !important;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate>input:checked~label {
+    color: #ffc700;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate:not(:checked)>label:hover,
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate>input:checked+label:hover,
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate>input:checked+label:hover~label,
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate>input:checked~label:hover,
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate>input:checked~label:hover~label,
+.learny-internal-course-row .learny-internal-course-rating-update-area .rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .review {
+    width: 100%;
+    display: inline-block;
+}
+
+.learny-internal-course-row .learny-internal-course-rating-update-area .review textarea {
+    height: 60px;
+    width: 300px;
+}
+
+.learny-internal-course-row .learny-internal-course-instructor-details {
+    font-size: 14px;
+    margin: 5px 0px 5px 0px;
+}
+
+.learny-internal-course-row .learny-internal-course-instructor-details img {
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50% !important;
+}
+
+.learny-internal-course-row .learny-internal-course-action a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.learny-empty-row-placeholder {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* COURSE PLAYER STYLE */
+.learny-course-player-accordion {}
+
+.learny-course-player-accordion ul {
+    padding-left: 0px;
+}
+
+.learny-course-player-accordion li {
+    padding: 10px 0px 10px 0px;
+}
+
+.learny-course-player-accordion li.learny-course-player-lesson-area input {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.learny-course-player-accordion li.learny-course-player-lesson-area a,
+.learny-course-player-accordion li.learny-course-player-lesson-area a:focus,
+.learny-course-player-accordion li.learny-course-player-lesson-area a:active {
+    vertical-align: middle !important;
+    text-decoration: none !important;
+    color: unset !important;
+    font-size: 16px !important;
+}
+
+.learny-course-player-accordion li.learny-course-player-lesson-area a.learny-course-player-attachment-handler {
+    float: right;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.learny-course-player-accordion li.learny-course-player-lesson-area a.learny-course-player-attachment-handler i {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.learny-course-player-accordion li.learny-course-player-lesson-area a.learny-course-player-attachment-handler:focus-within {
+    color: red;
+}
+
+.learny-course-player-currently-playing {
+    float: right;
+}
+
+.learny-course-player-currently-playing i {
+    font-size: 19px;
+    vertical-align: text-bottom;
+    font-weight: 700;
+    color: #424242;
+}
+
+.learny-course-player-attachment-dropdown {}
+
+.learny-course-player-attachment-dropdown li {
+    padding: 0px !important;
+}
+
+.learny-course-player-lesson-info {
+    font-size: 14px;
+    margin-top: 7px;
+    font-weight: 300;
+}
+
+.learny-course-player-lesson-info i {
+    font-size: 17px;
+    vertical-align: text-bottom;
+}
+
+.learny-course-player-iframe-container {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.learny-course-player-iframe-container iframe {
+    width: 100% !important;
+    overflow: hidden !important;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+.learny-course-progress-bar {
+    height: 15px !important;
+    font-weight: 700 !important;
+    font-size: 11px !important;
+}
+
+/* IT REMOVES THE CARET */
+.dropdown-toggle::after {
+    display: none !important;
+}

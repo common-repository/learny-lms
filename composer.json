@@ -1,0 +1,20 @@
+{
+    "name": "creativeitem/learny",
+    "description": "A WordPress Learning Management System Plugin",
+    "type": "project",
+    "license": "GPl",
+    "authors": [
+        {
+            "name": "Creativeitem",
+            "email": "support@creativeitem.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "paypal/rest-api-sdk-php": "dev-master",
+        "dompdf/dompdf": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"Learny\\": "./inc"}
+    } 
+}

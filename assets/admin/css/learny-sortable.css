@@ -1,0 +1,33 @@
+#learny-sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#learny-sortable li {
+    margin: 0 3px 7px 3px;
+    padding: 0px;
+    cursor: move;
+}
+
+.learny-box {
+    background: #ffffff;
+    border: 2px dashed #e4e6ef;
+    border-radius: 5px;
+}
+
+.learny-sortable-panel-style {
+    margin: 0px !important;
+    border-radius: 6px !important;
+}
+
+.ui-sortable .learny-panel-title {
+    border-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ui-sortable .learny-panel {
+    box-shadow: 0px 0px 0px 0px rgba(82, 63, 105, 0.05);
+}
